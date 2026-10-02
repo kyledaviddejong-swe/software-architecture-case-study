@@ -17,16 +17,10 @@ The proposed design separates browser interaction from authoritative game logic 
 
 I interpreted the user's needs as constraints that shaped the design, then connected the architectural decisions back to those requirements. Scalability and consistency were central concerns: multiple teams must be able to play without clients independently controlling shared state. The report explains the domain model and evaluates how the operating environment affects that design.
 
-Working through the design before implementation made the responsibilities and boundaries easier to identify. A technically correct system that ignores operational realities can still fail in practice. The portfolio edition adds a concise architecture overview and clarifies where a design recommendation still needs implementation and testing.
+Working through the design before implementation made the responsibilities and boundaries easier to identify. A technically correct system that ignores operational realities can still fail in practice. The report connects that overview to domain responsibilities and platform tradeoffs.
 
-## Scope
+## Scope and background
 
-This is a **documentation case study**, not a runnable game or deployed service. No application source is included in this repository, and no runtime, performance, or security testing is claimed. The PDF is the quickest way to review the work; no development setup is required.
+An undergraduate design case study based on a supplied fictional client scenario and domain model. The repository contains the design report; no application implementation is included.
 
-## Academic context and cleanup
-
-Prepared for SNHU CS-230 using the supplied fictional Gaming Room scenario and domain model. My contribution here is the written analysis and recommendations; the scenario and class structure are not presented as an independently invented product. This is not a real client engagement.
-
-The portfolio edition removes template instructions and supplied artwork, reorganizes the dense platform comparison, and corrects overbroad claims about singleton scope, shared state, session isolation, and platform compatibility. The original UML graphic is omitted because its authorship and redistribution status have not been established. AI assistance was used for this portfolio cleanup. The original school submission is preserved separately.
-
-Technical references used for the cleanup: [PostgreSQL constraints](https://www.postgresql.org/docs/18/ddl-constraints.html) and [Visual Studio Code platform support](https://code.visualstudio.com/docs/supporting/faq). These support specific explanations, not claims of an implemented database or toolchain.
+See [credits and acknowledgments](CREDITS.md). Technical references are included in the report.
